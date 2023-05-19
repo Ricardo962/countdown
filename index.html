@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/imagens/logo-desktop.svg" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Countdown</title>
+</head>
+<body>
+    <div class="top-image">
+        <img src="src/imagens/top-image.svg" alt="sombra do topo">
+    </div>
+    <div class="botton-image">
+        <img src="src/imagens/bottom-image.svg" alt="sombra de baixo">
+    </div>
+
+    <div class="container-countdown">
+        <div class="content-countdown">
+            <h1>READY TO LAUNCH IN...</h1>
+            <div class="container-clock">
+                <div class="clock">
+                    <span class="tempo">Dias</span>
+                    <span class="dias">00</span>
+                </div>
+                <div class="clock">
+                    <span class="tempo">Horas</span>
+                    <span class="horas">00</span>
+                </div>
+                <div class="clock">
+                    <span class="tempo">Minutos</span>
+                    <span class="minutos">00</span>
+                </div>
+                <div class="clock">
+                    <span class="tempo">Segundos</span>
+                    <span class="segundos">00</span>
+                </div>
+            </div>
+            <p>Inscreva-se para saber mais sobre o lançamento</p>
+            <button class="botao-inscreva" onclick="abirModal.open()">Inscreva-se</button>
+        </div>
+        <div class="logo-recketseat">
+            <img src="src/imagens/rocket.svg" alt="logo da rocketseat">
+        </div>
+    </div>
+
+    <div class="container-modal">
+        <div class="modal">
+            <form class="formulario">
+                <img src="src/imagens/logo-rocketseat.svg" alt="logo da rocketseat"> 
+                <h2>Fazer Inscrição</h2>
+                <p>
+                    <label for="Nome">Nome</label>
+                    <input type="text" placeholder="Nome" id="Nome" minlength="8" required>
+                <p>
+                    <label for="E-mail">E-mail</label>
+                    <input type="text" placeholder="E-mail" id="E-mail" minlength="25" required>
+                </p>
+                <div class="formulario-inscricao">
+                    <button type="submit">ME INSCREVER</button>
+                    <button class="vermelho" onclick="abirModal.close()">FECHAR</button>
+                </div>
+           </form>
+        </div>
+    </div>
+
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>
